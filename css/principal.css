@@ -1,0 +1,44 @@
+.principal {
+    padding: 1rem;
+}
+
+.principal__mandatos {
+    color: var(--cor-branco);
+    background-color: var(--cor-mandatos);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: .8rem;
+    border-radius: 3px;
+}
+.principal__mandatos:last-child {
+    margin-bottom: 0rem;
+}
+
+.mandatos__imagem {
+    border: .5rem solid #1d1e26;
+    height: 5em;
+    border-radius: 13px;
+    margin-bottom: 1rem;
+}
+
+.principal__mandatos:nth-child(3n+1) :nth-child(n)::selection {color: #000000; background: var(--cor-verde);}
+.principal__mandatos:nth-child(3n+2) :nth-child(n)::selection {color: #000000; background: var(--cor-rosa);}
+.principal__mandatos:nth-child(3n) :nth-child(n)::selection { color: #000000; background: var(--cor-azul);}
+
+.principal__mandatos:nth-child(3n+1) {border-top: 10px solid var(--cor-verde);}
+.principal__mandatos:nth-child(3n+2) {border-top: 10px solid var(--cor-rosa);}
+.principal__mandatos:nth-child(3n) {border-top: 10px solid var(--cor-azul);}
+
+.principal__mandatos:nth-child(3n+1) .principal__titulo {color: var(--cor-verde); border-left: .25rem solid var(--cor-verde);}
+.principal__mandatos:nth-child(3n+2) .principal__titulo {color: var(--cor-rosa); border-left: .25rem solid var(--cor-rosa);}
+.principal__mandatos:nth-child(3n) .principal__titulo {color: var(--cor-azul); border-left: .25rem solid var(--cor-azul);}
+
+
+.mandatos__feitos {
+    margin-top: 1em;
+}
+
+.mandatos__aviso {
+    margin-top: 1em;
+    text-transform: uppercase;
+}

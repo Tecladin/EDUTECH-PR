@@ -1,0 +1,43 @@
+@media screen and (min-width: 992px) {
+    .caixa {
+        margin-left: calc((100% - 940px)/2);
+        margin-right: calc((100% - 940px)/2);
+        padding: 1.7rem;
+        background-color: var(--cor-mandatos);
+        border-radius: 3px;
+        box-shadow: 10px 10px black;
+
+    }
+
+    .sobre {
+        border-radius: 3px;
+        background-color: var(--cor-azul);
+    }
+
+    .sobre :nth-child(n)::selection {
+        color: var(--cor-azul);
+    }
+
+    .principal {
+        background: var(--cor-principal);
+        box-sizing: border-box;
+        border-radius: 3px;
+        padding: 1.7rem;
+    }
+
+    .principal__mandatos {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+        margin-bottom: 1.7rem;
+        padding: 1.7rem;
+    }
+    
+    .principal__mandatos ul:last-child {
+        order: -1;
+    }
+    
+    .rodape {
+        font-size: .8rem;
+    } 
+}

@@ -1,0 +1,75 @@
+:root {
+    --cor-branco: #FFFFFF;
+    --cor-verde: #50fa7b;
+    --cor-rosa: #AD85BF;
+    --cor-azul: #5EC6F3;
+    --cor-mandatos: #2a2c37;
+    --cor-principal: #1d1e26;
+
+	--font-brutal: Brutal,sans-serif;
+}
+
+body {
+    background: linear-gradient(var(--cor-rosa), var(--cor-azul), var(--cor-verde));
+    font-family: var(--font-brutal);
+}
+
+main {
+    margin-top: 2rem;
+}
+
+.cabecalho {
+    text-align: center;
+    padding: 1rem;
+}
+.cabecalho :nth-child(n)::selection {
+    color: var(--cor-rosa); 
+    background: var(--cor-mandatos);
+}
+
+.cabecalho__navegacao li {
+    display: inline;
+}
+
+.navegacao__link {
+    text-decoration: none;
+    color: var(--cor-mandatos);
+}
+
+.principal__titulo {
+	font-weight: 700;
+	padding-left: .2em;
+	padding-top: .2em;
+	padding-bottom: .2em;
+	font-size: 1.4em;
+	margin: 0 0 1.4em;
+    box-sizing: border-box;
+}
+
+.sobre {
+    padding: 1rem;
+    color: var(--cor-mandatos);
+    margin-bottom: 2rem;
+}
+
+.sobre :nth-child(n)::selection {
+    color: var(--cor-rosa);
+    background: var(--cor-mandatos);
+}
+.rodape {
+    margin-top: 2rem;
+    color: var(--cor-mandatos);
+    font-size: .5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.rodape :nth-child(n)::selection {
+    color: var(--cor-verde);
+    background-color: var(--cor-mandatos);
+}
+
+.rodape a {
+    text-decoration: none;
+    color: var(--cor-mandatos);
+}
